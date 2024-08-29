@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/api/sessions/login" method="post">
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" required placeholder="Ingrese su email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" required placeholder="Ingrese su password">
+            </div>
+
+            <button class="btn-login" type="submit">Login</button>
+        </form>
+
+        <div >
+            <a class="a-git" href="/api/sessions/github">
+                <button class="btn-git">
+                            <img class="img-git" src="/assets/github (3).png" alt="GitHub">
+                            Ingresar con GitHub
+                </button>
+            </a>
+        </div>
+
+        <p>Si no estás registrado <a href="/register">Regístrate</a></p>
+        <p><a href="/restore">Olvidaste tu password?</a></p>
+    </div>
+</body>
+</html>

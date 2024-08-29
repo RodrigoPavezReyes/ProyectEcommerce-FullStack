@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/products.styles.css">
+    <title>Products</title>
+</head>
+<body>
+    <h1>BIENVENIDO 
+        {{first_name}} {{last_name}}!!!</h1>
+    <h2>{{role}}</h2>
+
+    <a href="/api/sessions/logout"><button>Logout</button></a>
+
+    <div class="product-list">
+        {{#each productsList}}
+        <div class="product-item">
+            <li>TITLE: {{ this.title }}</li>
+            <li>PRICE: ${{this.price}}</li>
+            <a href="/products/{{this._id}}">Ver detalles</a>
+            <button onclick="addToCart(`{{this._id}}`)" class="btn-agregar">Agregar al carrito</button>
+        </div>
+        {{/each}}
+    </div>
+
+    <div class="pagination">
+        {{#if hasPrevPage}}
+            <a href="/products?page={{prevPage}}&limit={{limit}}" class="prev-page">Previous</a>
+        {{/if}}
+        {{#if hasNextPage}}
+            <a href="/products?page={{nextPage}}&limit={{limit}}" class="next-page">Next</a>
+        {{/if}}
+    </div>
+
+
+    <script src="/javascripts/index.js"></script>
+</body>
+</html>

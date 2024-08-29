@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/restore.style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Restable tu Usuario</p>
+    <form action="/api/sessions/restore" method="post">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Ingrese su email" >
+
+        <label for="password">New Password</label>
+        <input type="password" name="password" placeholder="Ingrese su nuevo password">
+
+        <button type="submit">RESTABLECER</button>
+
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #001331; /* Fondo claro, similar al de Facebook */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado Principal */
+h1 {
+    color: #ffffff; /* Azul de Facebook */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #606770; /* Gris claro */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Enlace de Logout */
+a {
+    color: #ffb7b7; /* Azul de Facebook */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    button{
+        background-color: #ff5858;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        color: #000000; /* Azul más oscuro para el hover */
+    }
+}
+
+/* Lista de Productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Gris claro para bordes */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item li {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.product-item a {
+    color: #1c3b70; /* Azul de Facebook */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-item a:hover {
+    color: #1c3b70; /* Azul más oscuro para el hover */
+}
+
+/* Botón Agregar al Carrito */
+.btn-agregar {
+    background-color: #1c3b70; /* Azul de Facebook */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #701c4a; /* Azul más oscuro para el hover */
+}
+
+/* Paginación */
+.pagination {
+    
+    text-align: center;
+    margin-top: 30px;
+    height: 1rem;
+    width: 9rem;
+    justify-content: center;
+}
+
+.pagination a {
+    color: #ffffff; /* Azul de Facebook */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #ddd; /* Gris claro para bordes */
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #3150ff;
+}
+
+.pagination a:hover {
+    background-color: #1c3b70; /* Azul de Facebook */
+    color: #ffffff;
+}
